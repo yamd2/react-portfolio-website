@@ -7,10 +7,12 @@ export const TopNav = () => {
   return (
     <Navbar collapseOnSelect bg="none" expand="md" className="to-nav">
       <Container>
+ 
         {/* <Navbar.Brand href to="#"> */}
         <Link className="nav-link" to="/">
           Yam
         </Link>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
