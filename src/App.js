@@ -6,28 +6,21 @@ import { Hero } from "./components/Hero";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
   return (
     <div className="wrapper" id="wrapper">
-      {/* <!-- hero section --> */}
-      <Hero />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" index element={<Hero />} />
+          <Route path="skills" index element={<Skills />} />
 
-      {/* <!-- skills section --> */}
-      <Skills />
-      {/* <!-- projects section --> */}
-      <Projects />
-      {/* <!-- About me section --> */}
-      <AboutMe />
-      {/* <!-- contact section --> */}
-      <Contact />
-      {/* <!-- footer section --> */}
-      <footer className="footer bg-dark text-light text-center py-5 mt-5">
-        Copyritght &copy; all reserved. Made with 💓 by me.
-      </footer>
-
-      <a href="#wrapper" className="goup" id="goup">
-        <i className="fa-solid fa-circle-up fa-3x text-primary"></i>
-      </a>
+          <Route path="projects" index element={<Projects />} />
+          <Route path="about-me" index element={<AboutMe />} />
+          <Route path="contact" index element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
