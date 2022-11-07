@@ -66,3 +66,11 @@ ul {
     flex-direction: row;
   }
 }
+
+.to-nav {
+  background: linear-gradient(90deg, #e7db76 0.25%, #5dcb36 100%);
+}
+
+.layout {
+  min-height: 75vh;
+}
