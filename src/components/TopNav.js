@@ -6,7 +6,7 @@ export const TopNav = () => {
   return (
     <Navbar collapseOnSelect bg="none" expand="md">
       <Container>
-        <Navbar.Brand href="#">Prem</Navbar.Brand>
+        <Navbar.Brand href="#">Yam</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
